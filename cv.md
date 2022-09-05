@@ -1,5 +1,3 @@
-# [rsschool-cv](https://katsuro666.github.io/rsschool-cv/)
-
 # Artem Smirnov
 
 ## Contacts:
