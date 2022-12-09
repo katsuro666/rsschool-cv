@@ -1,0 +1,18 @@
+.header {
+  background-color: pink;
+  height: 60px;
+}
+
+.nav {
+  border-color: rgb(128,0,128);
+  border-style: solid;
+  position: fixed;
+  width: 100%;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

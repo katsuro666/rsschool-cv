@@ -5,11 +5,15 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$text-font: 'CourierCode', 'Courier',  monospace;
+
+/// Headings font family
+/// @type List
+$heading-font: 'Monaco', sans-serif;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
+/// ?????
 
 
 // {
@@ -28,7 +32,7 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 //   --codepen-bg: rgba(255, 255, 255, 0.15);
 //   --max-width: 1440px;
 //   --content-width: 1238px
-// } 
+// }
 
 
 /* .light {
@@ -50,7 +54,7 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: rgb(84, 0, 101) !default;
 
 /// Main brand color
 /// @type Color

@@ -212,12 +212,38 @@ a:hover, a:active, a:focus, a:focus-within {
   text-decoration: underline;
 }
 
-/**
- * Basic typography style for copy text
- */
+@font-face {
+  font-family: "CourierCode";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/CourierCode-Roman.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CourierCode";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/CourierCode-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CourierCode";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/CourierCode-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Monaco";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Monaco.ttf") format("truetype");
+}
 body {
-  color: rgb(34, 34, 34);
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: rgb(84, 0, 101);
+  font: normal 100%/1.4 "CourierCode", "Courier", monospace;
+}
+
+h2 {
+  font-family: "Monaco", sans-serif;
+  font-size: 200%;
 }
 
 .container {
@@ -245,4 +271,23 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.header {
+  background-color: pink;
+  height: 60px;
+}
+
+.nav {
+  border-color: rgb(128, 0, 128);
+  border-style: solid;
+  position: fixed;
+  width: 100%;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

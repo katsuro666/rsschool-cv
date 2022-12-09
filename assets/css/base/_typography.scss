@@ -1,7 +1,10 @@
-/**
- * Basic typography style for copy text
- */
+
 body {
   color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font: normal 100% / 1.4 $text-font;
+}
+
+h2 {
+  font-family: $heading-font;
+  font-size: 200%;
 }
