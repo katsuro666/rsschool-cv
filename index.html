@@ -17,6 +17,10 @@
           </li>
 
           <li>
+            <a href="" class="nav__item">Contacts</a>
+          </li>
+
+          <li>
             <a href="" class="nav__item">Skills</a>
           </li>
 
@@ -42,14 +46,14 @@
         </h1>
 
         <section class="intro">
-          <div class="avatar"></div>
-          <div class="typing"></div>
+          <img src="assets/images/me.png" alt="" class="avatar" />
+          <div class="typing">hi there :)</div>
         </section>
 
         <section class="about-me">
           <div class="about-me-container">
             <h2 class="about-me__heading">
-              What can i say about myself? I'm perfect!
+              What can I say about myself? I'm good!
             </h2>
 
             <p class="about-me__content">
@@ -60,9 +64,58 @@
           </div>
         </section>
 
+        <section class="contacts">
+          <div class="contacts-container">
+            <h2 class="contacts__heading">
+              If you already want to contact me, here you go!
+            </h2>
+
+            <div class="contacts__socials">
+              <div class="contacts__item">
+                <a href="https://t.me/katsu666" class="contacts__link">
+                  <span class="contacts__logo contacts__logo--tg"></span>
+                </a>
+
+                <p class="contacts__text">message me here</p>
+              </div>
+
+              <div class="contacts__item">
+                <a
+                  href="https://discordapp.com/users/422336383143641091/"
+                  class="contacts__link">
+                  <span class="contacts__logo contacts__logo--ds"></span>
+                </a>
+
+                <p class="contacts__text">or here</p>
+              </div>
+
+              <div class="contacts__item">
+                <a
+                  href="mailto:kreepinoutdakut@gmail.com"
+                  class="contacts__link">
+                  <span class="contacts__logo contacts__logo--gmail"></span>
+                </a>
+
+                <p class="contacts__text">or here</p>
+              </div>
+            </div>
+            <p class="contacts__content">
+              But maybe we shouldn't rush?
+              <br />
+              Maybe we should get to know each other a little better?
+            </p>
+            <p class="contacts__hint">
+              <span>hint:</span> You know? You can always return to this section via the nav
+              menu at the top of the screen!
+            </p>
+          </div>
+        </section>
+
         <section class="skills">
           <div class="skills-container">
-            <h2 class="skills__heading">YOU ask me what skills I have?</h2>
+            <h2 class="skills__heading">
+              Do you want to know what skills I have?
+            </h2>
 
             <div class="skills__content">
               * Git / GitGub
@@ -71,7 +124,9 @@
               <br />
               * CSS
               <br />
-              * JS (Basic)
+              * SCSS
+              <br />
+              * JavaScript
               <br />
             </div>
           </div>
@@ -83,7 +138,15 @@
               Do you want me to show you what projects I have done?
             </h2>
 
-            <div class="projects__content">here some projects</div>
+            <div class="projects__content">
+              <div class="projects__item">
+                <a href="https://katsuro666.github.io/travel/">Travel</a>
+              </div>
+
+              <div class="projects__item">
+                <a href="https://katsuro666.github.io/momentum/">Momentum</a>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -108,18 +171,27 @@
           </div>
         </section>
       </main>
-
     </div>
+
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer__socials">
-          <div class="footer__socials-logo"></div>
-          <a href="https://github.com/katsuro666" class="footer__socials-content">this is me!</a>
+        <div class="footer__item footer__socials">
+          <a href="https://github.com/katsuro666" class="footer__socials-link">
+            <div class="footer__socials-logo"></div>
+          </a>
+
+          <p class="footer__item-content">this is me!</p>
         </div>
 
-        <div class="footer__year"></div>
+        <div class="footer__year">2022</div>
 
-        <div class="footer__school"></div>
+        <div class="footer__item footer__school">
+          <a href="https://rs.school/js/" class="footer__school-link">
+            <div class="footer__school-logo"></div>
+          </a>
+
+          <p class="footer__item-content">this is my school!</p>
+        </div>
       </div>
     </footer>
   </body>

@@ -15,67 +15,13 @@ $heading-font: 'Monaco', sans-serif;
 /// @type List
 /// ?????
 
-
-// {
-//   --bg: #1D262D;
-//   --primary: #311996;
-//   --white: #F8F0E4;
-//   --text: #F8F0E4;
-//   --accent: #E12179;
-//   --accent2: linear-gradient(0deg, #BC1964 0%, #311996 100%);
-//   --hover: linear-gradient(0deg, #BC1964 0%, #311996 100%);
-//   --linkedin: #2867B2;
-//   --linkedin-bg: rgba(40, 103, 178, 0.35);
-//   --github: #6E5494;
-//   --github-bg: rgba(110, 84, 148, 0.35);
-//   --codepen: rgba(255, 255, 255, 0.65);
-//   --codepen-bg: rgba(255, 255, 255, 0.15);
-//   --max-width: 1440px;
-//   --content-width: 1238px
-// }
+$text-color: rgba(232, 254, 249, 1);
+$background: rgba(31, 31, 31, 1);
+$heading: rgba(127, 255, 212, 1);
+$accent: rgba(75, 246, 217, 1);
+$accent2: rgba(266, 66, 178, 1);
 
 
-/* .light {
-  --bg: #F8F0E4;
-  --primary: #311996;
-  --white: #F8F0E4;
-  --text: #311996;
-  --accent: #E12179;
-  --accent2: #311996;
-  --linkedin: #2867B2;
-  --github: #c9510c;
-  --github-bg: rgba(201, 81, 12, 0.35);
-  --codepen: #12100B;
-  --codepen-bg: rgba(18, 16, 11, 0.35);
-} */
-
-/* Light theme colors */
-
-
-/// Copy text color
-/// @type Color
-$text-color: rgb(84, 0, 101) !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
-
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-
-
-/// Container's maximum width
-/// @type Length
 $max-width: 1238px !default;
 
 

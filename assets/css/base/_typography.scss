@@ -1,10 +1,14 @@
 
 body {
+  background-color: $background;
   color: $text-color;
-  font: normal 100% / 1.4 $text-font;
+  font: normal 140% / 1.5 $text-font;
 }
 
 h2 {
   font-family: $heading-font;
-  font-size: 200%;
+  font-size: 300%;
+  color: $accent2;
+  margin: 10px auto;
+  text-align: center;
 }
