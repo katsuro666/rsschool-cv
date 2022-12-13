@@ -227,6 +227,7 @@ body {
   background-color: rgb(31, 31, 31);
   color: rgb(232, 254, 249);
   font: normal 140%/1.5 "CourierCode", "Courier", monospace;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
 }
 
 h2 {
@@ -235,6 +236,7 @@ h2 {
   color: rgb(255, 66, 178);
   margin: 10px auto;
   text-align: center;
+  text-shadow: 0 0 25px rgb(255, 50, 208);
 }
 
 .container {
@@ -273,6 +275,7 @@ h2 {
   position: fixed;
   width: 100%;
   background: linear-gradient(to top, rgba(75, 246, 218, 0) 0%, rgba(75, 246, 217, 0) 0%, rgb(0, 91, 75) 100%);
+  z-index: 10;
 }
 
 .nav__list {
@@ -328,9 +331,31 @@ h2 {
 
 .contacts__logo {
   display: block;
+  position: relative;
   width: 60px;
   height: 60px;
   margin-top: 20px;
+}
+.contacts__logo::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: rgb(75, 246, 217);
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1.2em) rotateX(40deg) scale(1.5, 0.5);
+  filter: blur(1.15em);
+  opacity: 0.7;
+  transition: transform 0.5s linear;
+}
+
+.contacts__logo:hover::before,
+.contacts__logo:focus::before {
+  opacity: 1;
+  transform: perspective(1em) rotateX(40deg) scale(1.5, 0.6);
+  transition: transform 0.5s linear;
 }
 
 .contacts__logo--tg {
@@ -369,8 +394,11 @@ h2 {
 .contacts__socials {
   display: flex;
   justify-content: space-around;
-  background-color: rgba(31, 31, 31, 0.7);
-  border: thick double rgba(75, 246, 217, 0.7);
+  --x: 50%;
+  --y: 50%;
+  border: 5px solid transparent;
+  background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), rgb(255, 66, 178), rgb(75, 246, 217)) border-box;
+  opacity: 0.7;
 }
 
 .contacts__item {
@@ -381,16 +409,21 @@ h2 {
 
 .contacts__text {
   color: rgb(255, 66, 178);
+  text-shadow: 0 0 25px rgb(255, 50, 208);
 }
 
 .contacts__content {
   text-align: center;
-  border: thick double rgba(75, 246, 217, 0.5);
   padding: 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 10px auto 30px;
+  margin: 100px auto 30px;
+  --x: 50%;
+  --y: 50%;
+  border: 5px solid transparent;
+  background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), rgb(75, 246, 217), rgb(255, 66, 178)) border-box;
+  opacity: 0.7;
 }
 
 .contacts__hint {
@@ -407,6 +440,128 @@ h2 {
   color: rgb(75, 246, 217);
 }
 
+.skills {
+  background: url("../images/blocks/2.jpg") no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+  z-index: -10;
+  position: relative;
+}
+
+.skills-container {
+  background-color: rgba(31, 31, 31, 0.7);
+  padding: 10px 20px;
+  z-index: -10;
+  position: relative;
+}
+
+.skills__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__item {
+  background: url("../icons/chip-black.png") center no-repeat;
+  background-size: 300px;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+}
+
+.skills__inner {
+  display: block;
+  position: relative;
+  width: 146px;
+  height: 146px;
+  margin-left: 86px;
+  margin-top: 77px;
+}
+.skills__inner::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+.skills__inner::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+  filter: blur(40px);
+}
+.skills__inner span {
+  position: absolute;
+  bottom: -3%;
+  left: 50%;
+  transform: translate(-50%);
+  display: inline-block;
+}
+
+.skills__inner::after,
+.skills__inner::before {
+  background: linear-gradient(-240deg, rgb(75, 246, 217), rgb(31, 31, 31), rgb(255, 66, 178));
+  -webkit-animation: anim 2s linear infinite;
+          animation: anim 2s linear infinite;
+}
+
+.skills__logo {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  top: 21%;
+  left: 21%;
+}
+.skills__logo--git {
+  background: url("../icons/git.svg") center no-repeat;
+  background-size: contain;
+}
+.skills__logo--github {
+  background: url("../icons/github.png") center no-repeat;
+  background-size: contain;
+}
+.skills__logo--html {
+  background: url("../icons/html.png") center no-repeat;
+  background-size: contain;
+}
+.skills__logo--css {
+  background: url("../icons/css.svg") center no-repeat;
+  background-size: contain;
+}
+.skills__logo--scss {
+  background: url("../icons/scss.png") center no-repeat;
+  background-size: contain;
+}
+.skills__logo--js {
+  background: url("../icons/javascript.svg") center no-repeat;
+  background-size: contain;
+}
+
+@-webkit-keyframes anim {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes anim {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 .footer {
   background: linear-gradient(to bottom, rgba(75, 246, 218, 0) 0%, rgba(75, 246, 217, 0) 0%, rgb(0, 168, 137) 100%);
 }

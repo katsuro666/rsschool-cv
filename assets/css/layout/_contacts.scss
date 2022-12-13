@@ -4,15 +4,39 @@
 }
 
 .contacts-container {
-  // padding: 5px 20px;
   background-color: rgba(31, 31, 31, 0.9);
 }
 
 .contacts__logo {
   display: block;
+  position: relative;
   width: 60px;
   height: 60px;
   margin-top: 20px;
+
+  &::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: $accent;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(1.2em) rotateX(40deg) scale(1.5, 0.5);
+    filter: blur(1.15em);
+    opacity: 0.7;
+
+    transition: transform 0.5s linear;
+  }
+}
+
+.contacts__logo:hover::before,
+.contacts__logo:focus::before {
+  opacity: 1;
+  transform: perspective(1em) rotateX(40deg) scale(1.5, 0.6);
+  transition: transform 0.5s linear;
 }
 
 .contacts__logo--tg {
@@ -54,9 +78,11 @@
 .contacts__socials {
   display: flex;
   justify-content: space-around;
-  background-color: rgba(31, 31, 31, 0.7);
-  border: thick double rgba(75, 246, 217, 0.7);
-
+  --x: 50%;
+	--y: 50%;
+  border: 5px solid transparent;
+	background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y),  $accent2, $accent) border-box;
+  opacity: 0.7;
 }
 
 .contacts__item {
@@ -67,14 +93,19 @@
 
 .contacts__text {
   color: $accent2;
+  text-shadow: 0 0 25px rgb(255, 50, 208)
 }
 
 .contacts__content {
   text-align: center;
-  border: thick double rgba(75, 246, 217, 0.5);
   padding: 10px;
   width: fit-content;
-  margin: 10px auto 30px;
+  margin: 100px auto 30px;
+  --x: 50%;
+	--y: 50%;
+  border: 5px solid transparent;
+	background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), $accent, $accent2) border-box;
+  opacity: 0.7;
 }
 
 .contacts__hint {
@@ -89,5 +120,6 @@
     font-family: $heading-font;
     font-size: 32px;
     color: $accent;
+
   }
 }
