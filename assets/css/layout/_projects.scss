@@ -1,0 +1,85 @@
+.projects {
+  background: url('../images/blocks/3.jpg') no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+}
+
+.projects-container {
+  background-color: rgba(31, 31, 31, 0.9);
+  padding: 20px;
+}
+
+.projects-frame {
+  pointer-events: none;
+  width: 100%;
+  height: 500px;
+}
+
+.projects__item {
+  position: relative;
+}
+
+.projects__inner-container {
+  position: absolute;
+  background: $background;
+  width: 60%;
+  height: 75%;
+  top: 4%;
+  left: 19%;
+}
+
+.projects__item--momentum {
+  background: url('../images/momentum-preview.jpg');
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.projects__item--travel {
+  background: url('../images/travel-preview.jpg');
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.item-mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(31, 31, 31, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-plate {
+  background: #06202e;
+  border-left: 2px solid #d9f2f4;
+  opacity: 0.5;
+  font-size: 14px;
+  color: $accent;
+  margin: 15px 0 0 10px;
+  padding: 10px 5px;
+  width: 30%;
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    color: $heading;
+    opacity: 1;
+    margin-left: 3%;
+  }
+}
+
+.item__name {
+  color: $text-color;
+}
+
+.item__button {
+  & a {
+    display: block;
+    width: 100%;
+  }
+
+  &:hover {
+    color: $accent2;
+  }
+}
