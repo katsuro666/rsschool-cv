@@ -1,0 +1,24 @@
+.languages {
+  background: url('../images/blocks/4.jpg') center no-repeat;
+  background-size: cover;
+  margin: 100px 0;
+}
+
+.languages-container {
+  background-color: rgba(31, 31, 31, 0.9);
+  padding: 5px 20px;
+}
+
+.languages__wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  color: $accent;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 42px $accent,
+  0 0 82px $accent,
+  0 0 92px $accent,
+  0 0 102px $accent,
+  0 0 151px $accent;
+}
