@@ -287,8 +287,32 @@ h2 {
 
 .nav__item {
   color: rgb(75, 246, 217);
+  -webkit-animation: blink-caret 0.5s step-end infinite;
+          animation: blink-caret 0.5s step-end infinite;
+}
+.nav__item:hover {
+  border-right: 0.15em solid rgb(75, 246, 217); /* The typwriter cursor */
+  -webkit-animation: blink-caret 0.5s step-end infinite;
+          animation: blink-caret 0.5s step-end infinite;
 }
 
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(75, 246, 217);
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(75, 246, 217);
+  }
+}
 .intro {
   background: url("../images/lines-intro.png") center no-repeat;
   background-size: cover;
@@ -306,11 +330,14 @@ h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 20px auto;
+  margin: 5px auto;
+  font-size: 48px;
+  text-shadow: 0 0 7px #fff, 0 0 42px rgb(161, 249, 234), 0 0 82px rgb(106, 245, 222), 0 0 92px rgb(55, 215, 188), 0 0 102px rgb(25, 219, 187), 0 0 251px rgb(0, 255, 213);
 }
 
 .about-me {
   background: url("../images/blocks/1.jpg") center no-repeat;
+  position: relative;
 }
 
 .about-me-container {
@@ -330,6 +357,7 @@ h2 {
 .contacts {
   background: url("../images/blocks/6.jpg") center no-repeat;
   margin-top: 100px;
+  position: relative;
 }
 
 .contacts-container {
@@ -643,9 +671,8 @@ h2 {
   color: rgb(232, 254, 249);
 }
 
-.item__button a {
+.item__button {
   display: block;
-  width: 100%;
 }
 .item__button:hover {
   color: rgb(255, 66, 178);
@@ -773,6 +800,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin: 10px 0 0;
+  width: 33%;
 }
 
 .footer__socials-logo {
@@ -791,4 +819,27 @@ h2 {
 
 .footer__item-content {
   margin: 5px 0 0;
+}
+
+#matrix-js {
+  position: fixed;
+  z-index: -100;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#canvas {
+  margin: 0;
+  padding: 0;
+}
+
+#matrix-js {
+  background-color: rgb(31, 31, 31);
+}
+
+.matrix-background {
+  background-color: rgb(31, 31, 31);
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

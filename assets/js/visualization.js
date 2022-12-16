@@ -8,3 +8,4 @@ function mouseLighter(e) {
 
 document.querySelector('.contacts__socials').onmousemove = (e) => mouseLighter(e)
 document.querySelector('.contacts__content').onmousemove = (e) => mouseLighter(e)
+

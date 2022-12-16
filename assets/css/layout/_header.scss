@@ -19,4 +19,15 @@
 
 .nav__item {
   color: $accent;
+  animation: blink-caret .5s step-end infinite;
+
+  &:hover {
+    border-right: .15em solid $accent; /* The typwriter cursor */
+    animation: blink-caret .5s step-end infinite;
+  }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $accent }
 }

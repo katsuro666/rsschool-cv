@@ -74,10 +74,8 @@
 }
 
 .item__button {
-  & a {
-    display: block;
-    width: 100%;
-  }
+  display: block;
+  // width: 30%;
 
   &:hover {
     color: $accent2;
