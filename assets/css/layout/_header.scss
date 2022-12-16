@@ -1,0 +1,33 @@
+.header {
+  height: 80px;
+  background: linear-gradient(to top, rgba(75,246,218,0) 0%, rgba(75,246,217,0) 0%, rgba(75,246,217,1) 100%);
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(to top, rgba(75,246,218,0) 0%, rgba(75,246,217,0) 0%, rgb(0, 91, 75) 100%);
+  z-index: 10;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__item {
+  color: $accent;
+  animation: blink-caret .5s step-end infinite;
+
+  &:hover {
+    border-right: .15em solid $accent; /* The typwriter cursor */
+    animation: blink-caret .5s step-end infinite;
+  }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $accent }
+}

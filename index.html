@@ -1,12 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <title>Artem Smirnov - preJunior Front-End Developer</title>
   </head>
+
   <body>
-    <h1 class="body__hello">Hello world!</h1>
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <ul class="nav__list">
+            <li>
+              <a href="#about-me" class="nav__item" id="nav__about-me">
+                About me
+              </a>
+            </li>
+
+            <li>
+              <a href="#contacts" class="nav__item" id="nav__contacts">
+                Contacts
+              </a>
+            </li>
+
+            <li>
+              <a href="#skills" class="nav__item" id="nav__skills">Skills</a>
+            </li>
+
+            <li>
+              <a href="#projects" class="nav__item" id="nav__projects">
+                Projects
+              </a>
+            </li>
+
+            <li>
+              <a href="#education" class="nav__item" id="nav__education">
+                Education
+              </a>
+            </li>
+
+            <li>
+              <a href="#languages" class="nav__item" id="nav__languages">
+                Languages
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="matrix-js"></div>
+      <h1 class="visually-hidden">
+        Artem Smirnov - Resume of pre-Junior Front-End Developer
+      </h1>
+
+      <div class="matrix-background">
+        <div class="intro">
+          <img src="assets/images/me.png" alt="" class="avatar" />
+          <div class="typing" id="typing"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <section class="about-me">
+          <a id="about-me"></a>
+          <div class="about-me-container">
+            <h2 class="about-me__heading">A few words about me.</h2>
+
+            <p class="about-me__content">
+              Today my goal is to learn to code in order to achieve my main goal
+              in the future - I want to become a blockchain developer. Web3 is
+              very attractive to me, and I strongly believe that soon the
+              Internet and everything around it will be different. In the
+              future, I want to constantly introduce new technologies for
+              people, opening up new horizons for them. And now, according to my
+              roadmap, my first step is to learn JavaScript.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="contacts">
+          <a id="contacts"></a>
+          <div class="contacts-container">
+            <h2 class="contacts__heading">
+              If you already want to contact me, here you go!
+            </h2>
+
+            <div class="contacts__socials">
+              <div class="contacts__item">
+                <a href="https://t.me/katsu666" class="contacts__link">
+                  <span class="contacts__logo contacts__logo--tg"></span>
+                </a>
+
+                <p class="contacts__text">message me here</p>
+              </div>
+
+              <div class="contacts__item">
+                <a
+                  href="https://discordapp.com/users/422336383143641091/"
+                  class="contacts__link">
+                  <span class="contacts__logo contacts__logo--ds"></span>
+                </a>
+
+                <p class="contacts__text">or here</p>
+              </div>
+
+              <div class="contacts__item">
+                <a
+                  href="mailto:kreepinoutdakut@gmail.com"
+                  class="contacts__link">
+                  <span class="contacts__logo contacts__logo--gmail"></span>
+                </a>
+
+                <p class="contacts__text">or here</p>
+              </div>
+            </div>
+            <p class="contacts__content">
+              But maybe we shouldn't rush?
+              <br />
+              Maybe we should get to know each other a little better?
+              <br />
+              Sit back, relax, and scroll down!
+            </p>
+            <p class="contacts__hint">
+              <span>hint:</span>
+              You know? You can always return to this section via the nav menu
+              at the top of the screen!
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="skills">
+          <a id="skills"></a>
+          <div class="skills-container">
+            <h2 class="skills__heading">Let me show you my skills.</h2>
+
+            <div class="skills__content">
+              <div class="skills__item">
+                <div class="skills__inner">
+                  <div class="skills__logo skills__logo--git"></div>
+
+                  <span>git</span>
+                </div>
+              </div>
+
+              <div class="skills__item">
+                <div class="skills__inner">
+                  <div class="skills__logo skills__logo--github"></div>
+
+                  <span>GitHub</span>
+                </div>
+              </div>
+
+              <div class="skills__item">
+                <div class="skills__inner">
+                  <div class="skills__logo skills__logo--html"></div>
+
+                  <span>HTML</span>
+                </div>
+              </div>
+
+              <div class="skills__item">
+                <div class="skills__inner">
+                  <div class="skills__logo skills__logo--css"></div>
+
+                  <span>CSS</span>
+                </div>
+              </div>
+
+              <div class="skills__item">
+                <div class="skills__inner">
+                  <div class="skills__logo skills__logo--scss"></div>
+
+                  <span>SCSS</span>
+                </div>
+              </div>
+
+              <div class="skills__item">
+                <div class="skills__inner">
+                  <div class="skills__logo skills__logo--js"></div>
+
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="projects">
+          <a id="projects"></a>
+          <div class="projects-container">
+            <h2 class="project__heading">
+              Here you can take a look at my projects.
+            </h2>
+
+            <div class="projects__content">
+              <div class="projects__item">
+                <img
+                  class="projects-frame"
+                  src="assets/images/pixel-frame.png"
+                  alt="" />
+                <div class="projects__inner-container">
+                  <div class="projects__item--momentum">
+                    <div class="item-mask">
+                      <div class="item-plate item__name">Momentum</div>
+
+                      <div class="item-plate item__desc">
+                        You will never forget what day and time it is. Watch the
+                        weather, read inspirational quotes, do whatever you
+                        want.
+                        <br />
+                        Momentum.
+                        <br />
+                        Available in 3 languages
+                      </div>
+
+                      <a
+                        href="https://katsuro666.github.io/momentum/"
+                        class="item-plate item__button">
+                        Check this out
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="projects__item">
+                <img
+                  class="projects-frame"
+                  src="assets/images/pixel-frame.png"
+                  alt="" />
+                <div class="projects__inner-container">
+                  <div class="projects__item--travel">
+                    <div class="item-mask">
+                      <div class="item-plate item__name">Travel</div>
+
+                      <div class="item-plate item__desc">
+                        My first landing page.
+                        <br />
+                        My first baby.
+                        <br />
+                        Just look at this.
+                      </div>
+
+                      <a
+                        href="https://katsuro666.github.io/travel/"
+                        class="item-plate item__button">
+                        Check this out
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="education">
+          <a id="education"></a>
+          <div class="education-container">
+            <h2 class="education__heading">And what about my education?</h2>
+
+            <div class="education__content">
+              I was nobody. I came from nowhere to be who I want to be.
+              <br />
+              All my education from the past is irrelevant.
+              <br />
+              History is being written now.
+            </div>
+
+            <div class="education-mask">
+              <div class="education__period">
+                <div class="period__container">
+                  <h3 class="period__heading">2022 - till now</h3>
+
+                  <p class="period__content">
+                    The Rolling Scopes School: JavaScript/Front-end course
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="languages">
+          <a id="languages"></a>
+          <div class="languages-container">
+            <h2 class="languages__heading">What languages do I speak?</h2>
+            <div class="languages__wrapper">
+              <p class="languages__item languages__content">
+                English - Intermediate (B1)
+              </p>
+
+              <p class="languages__item languages__content">Russian - Native</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="matrix-background">
+        <div class="outro"></div>
+      </div>
+    </main>
+
+    <div class="matrix-background">
+      <footer class="footer">
+        <div class="footer-container container">
+          <div class="footer__item footer__socials">
+            <a
+              href="https://github.com/katsuro666"
+              class="footer__socials-link">
+              <div class="footer__socials-logo"></div>
+            </a>
+
+            <p class="footer__item-content">this is me!</p>
+          </div>
+
+          <div class="footer__item footer__year">2022</div>
+
+          <div class="footer__item footer__school">
+            <a href="https://rs.school/js/" class="footer__school-link">
+              <div class="footer__school-logo"></div>
+            </a>
+
+            <p class="footer__item-content">this is my school!</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="assets/js/visualization.js"></script>
+    <script src="assets/js/typewriter.js"></script>
+    <script src="assets/js/digital-rain.js"></script>
   </body>
 </html>

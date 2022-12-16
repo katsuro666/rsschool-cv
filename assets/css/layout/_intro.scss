@@ -1,0 +1,27 @@
+.intro {
+  background: url('../images/lines-intro.png') center no-repeat;
+  background-size: cover;
+  height: 500px;
+
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  margin-left: calc(50% - 100px);
+  border-radius: 50%;
+}
+
+.typing {
+  width: fit-content;
+  margin: 5px auto;
+  font-size: 48px;
+  
+  text-shadow:
+  0 0 7px #fff,
+  0 0 42px rgb(161, 249, 234),
+  0 0 82px rgb(106, 245, 222),
+  0 0 92px rgb(55, 215, 188),
+  0 0 102px rgb(25, 219, 187),
+  0 0 251px rgb(0, 255, 213);
+}

@@ -1,0 +1,122 @@
+.skills {
+  background: url('../images/blocks/2.jpg') no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+  z-index: -10;
+  position: relative;
+}
+
+.skills-container {
+  background-color: rgba(31, 31, 31, 0.7);
+  padding: 10px 20px;
+  z-index: -10;
+  position: relative;
+}
+
+.skills__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__item {
+  background: url('../icons/chip-black.png') center no-repeat;
+  background-size: 300px;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+}
+
+.skills__inner {
+  display: block;
+  position: relative;
+  width: 146px;
+  height: 146px;
+  margin-left: 86px;
+  margin-top: 77px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    filter: blur(40px);
+  }
+
+  & span {
+    position: absolute;
+    bottom: -3%;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+  }
+}
+
+.skills__inner::after,
+.skills__inner::before {
+  background: linear-gradient(-240deg, $accent, $background, $accent2);
+  // background: $accent;
+  animation: anim 2s linear infinite;
+}
+
+.skills__logo {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  top: 21%;
+  left: 21%;
+
+  &--git {
+    background: url('../icons/git.svg') center no-repeat;
+    background-size: contain;
+  }
+
+  &--github {
+    background: url('../icons/github.png') center no-repeat;
+    background-size: contain;
+  }
+
+  &--html {
+    background: url('../icons/html.png') center no-repeat;
+    background-size: contain;
+  }
+
+  &--css {
+    background: url('../icons/css.svg') center no-repeat;
+    background-size: contain;
+  }
+
+  &--scss {
+    background: url('../icons/scss.png') center no-repeat;
+    background-size: contain;
+  }
+
+  &--js {
+    background: url('../icons/javascript.svg') center no-repeat;
+    background-size: contain;
+  }
+}
+
+@keyframes anim {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
