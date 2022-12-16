@@ -218,7 +218,7 @@ a:hover, a:active, a:focus, a:focus-within {
   src: url("../fonts/CourierCode-Italic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Monaco";
+  font-family: "ThisIsMonaco";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/Monaco.ttf") format("truetype");
@@ -231,7 +231,7 @@ body {
 }
 
 h2 {
-  font-family: "Monaco", sans-serif;
+  font-family: "ThisIsMonaco", sans-serif;
   font-size: 300%;
   color: rgb(255, 66, 178);
   margin: 10px auto;
@@ -470,7 +470,7 @@ h2 {
   background: linear-gradient(to bottom, rgba(75, 246, 218, 0) 0%, rgba(75, 246, 217, 0) 0%, rgb(41, 132, 116) 100%);
 }
 .contacts__hint span {
-  font-family: "Monaco", sans-serif;
+  font-family: "ThisIsMonaco", sans-serif;
   font-size: 32px;
   color: rgb(75, 246, 217);
 }
