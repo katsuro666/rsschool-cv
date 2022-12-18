@@ -1,19 +1,11 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------
-
-
 /// Regular font family
 /// @type List
 $text-font: 'CourierCode', 'Courier',  monospace;
 
 /// Headings font family
 /// @type List
-$heading-font: 'Monaco', sans-serif;
+$heading-font: 'VT323', monospace;
 
-/// Code (monospace) font family
-/// @type List
-/// ?????
 
 $text-color: rgba(232, 254, 249, 1);
 $background: rgba(31, 31, 31, 1);
@@ -22,9 +14,7 @@ $accent: rgba(75, 246, 217, 1);
 $accent2: rgba(266, 66, 178, 1);
 
 
-$max-width: 1238px !default;
-
-
+$max-width: 1238px;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
