@@ -226,7 +226,7 @@ body {
 
 h2 {
   font-family: "VT323", monospace;
-  font-size: 300%;
+  font-size: 250%;
   color: rgb(255, 66, 178);
   margin: 10px auto;
   text-align: center;
@@ -423,6 +423,7 @@ h2 {
 .contacts__socials {
   display: flex;
   justify-content: space-around;
+  margin-top: 50px;
   --x: 50%;
   --y: 50%;
   border: 5px solid transparent;
